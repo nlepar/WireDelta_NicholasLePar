@@ -1,0 +1,54 @@
+/*styles: holds the css information for the html.*/
+
+/*Body and container declarations for the four tasks. Set up to keep the four square task in the center by percentage
+  going to a scroll bar after a certain minimum width*/
+html, body { height:100%; margin:0; padding:0; background:#EEF0F6; min-width:800px; min-height: 800px;}
+
+.fullBody {position:relative; width:100%; height:90%; top:10%; min-width:800px; min-height: 800px;}
+
+#titleBar{position:absolute; width:100%; height:8.5%; text-align:center; font-family:Arial, Helvetica, sans-serif; margin-top:1.5%;
+    font-size: 1vw; color:black; min-width:800px;}
+
+.windowContainer {position:absolute; width:80%; height:80%; margin-left:10%; margin-bottom:5%; min-width: 600px; min-height: 800px;}
+
+.window {display:block; position:absolute; width:48.75%; height:48.75%; min-height:200px; min-width: 200px; border-radius:50px; overflow: hidden;}
+
+/*These are the four tasks. My idea behind the design was to create an elegant looking layout that put the task in four
+    equal boxes.*/
+#task1 {top:0;   left:0; opacity:0.5;  background:#EFA5E0; transition:1s; vertical-align:middle; margin-bottom:1.25%;
+    text-align:center; font-family:Arial, Helvetica, sans-serif; font-size: 1vw; color:black;}
+#task2 {top:0;   left:50%; opacity:0.5;  background:#F5F59E; transition:1s; vertical-align:middle;margin-left:1.25%;margin-bottom:1.25%;
+    text-align:center; font-family:Arial, Helvetica, sans-serif; font-size: 1vw;color:black;}
+#task3 {top:50%; left:0;  opacity:0.5; background:#B9C1DB; transition:1s; vertical-align:middle;margin-right:1.25%;margin-top:1.25%;
+    text-align:center; font-family:Arial, Helvetica, sans-serif; font-size: 1vw;color:black;}
+#task4 {top:50%; left:50%; opacity:0.5; background:#B5F59E; transition:1s; vertical-align:middle;margin-left:1.25%;margin-top:1.25%;
+    text-align:center; font-family:Arial, Helvetica, sans-serif; font-size: 1vw;color:black;}
+
+/*The window inside each task box*/
+.functionWindow{max-width: 90%; max-height:90%; margin: 0 auto;}
+
+/*The hover effect gives each task a more personal touch making it the focal point on the page.*/
+#task1:hover {
+    transition: 1s;
+    background-color: #EC93DA;
+    opacity:1;
+}
+#task2:hover {
+    transition: 1s;
+    background-color: #F4F48A;
+    opacity:1;
+}
+#task3:hover {
+     transition: 1s;
+     background-color: #ABB5D3;
+     opacity:1;
+ }
+#task4:hover {
+    transition: 1s;
+    background-color: #A5F48A;
+    opacity:1;
+}
+
+button{
+    margin-top: 10px;
+}

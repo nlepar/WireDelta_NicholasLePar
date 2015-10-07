@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>B
+    <title>Task 5: Presentation by Nicholas LePar </title>
+    <!---->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+<!--Title bar-->
+<div id = "titleBar">
+    <h1>
+        Task 5: Presentation by Nicholas LePar
+    </h1>
+    <!--Container for everything but the title-->
+    <div class="fullBody">
+        <!--Container which keeps the for tasks centered correctly-->
+        <div class = "windowContainer">
+            <!--Task 1 window-->
+            <div id="task1" class="window">
+                <p id="task1Title" class = "taskTitles">
+                    Task 1: The Age Calculator
+                </p>
+                <div id="ageCalculatorTask1" class="functionWindow">
+                    <p class="taskInfo">
+                        Forgot your age?! This task helps you figure out how old you might be.
+                        Just enter your birth year to find out.
+                    </p>
+                    <form>
+                        Birth Year:<br/>
+                        <input type="number" name="birthyear" id="birthyear" value="" min="0" required>
+                    </form>
+                    <button type="button" id="submitTask1" onclick=calculateAge()>Calculate</button>
+                    <script type="text/javascript" src="calculateAge.js"></script>
+                    <p id="calculateAgeReturn"></p>
+                </div>
+            </div>
+            <!--Task 2 window-->
+            <div id=task2 class="window">
+                <p id="task2Title" class="taskTitles">
+                    Task 2: The Lifetime Supply Calculator
+                </p>
+                <div id="lifetimeSupplyTask2" class="functionWindow">
+                    <p class="taskInfo">
+                        Curious about how much of a "lifetime supply" your favorite snack
+                        would be? Calculate it out.
+                    </p>
+                    <form>
+                        Age:<br/>
+                        <input type="number" name="ageTask2" id="ageTask2" value="" min="0" required>
+                        <br/>
+                        Amount per Day:<br/>
+                        <input type="number" name="amountPerDayTask2" id="amountPerDayTask2" value="" min="0" required>
+                        <br/>
+                    </form>
+                    <button type="button" id="submitTask2" onclick=calculateSupply();>Calculate</button>
+                    <script type="text/javascript" src="lifetimeSupplyCalculator.js"></script>
+                    <p id="lifetimeSupplyReturn"></p>
+                </div>
+            </div>
+            <!--Task 3 window-->
+            <div id="task3" class="window">
+                <p id="task3Title" class="taskTitles">Task 3: The Geometrizer</p>
+                <div id="geometrizerTask3" class="functionWindow">
+                    <p class="taskInfo">
+                        This task can help you calculate the circumference or
+                        area of a circle given a radius.
+                    </p>
+                    <form action="">
+                        <input type="radio" id="circleFunctionC" name="circleFunction" value="Circumference" checked>Circumference
+                        <input type="radio" id="circleFunctionA" name="circleFunction" value="Area">Area
+                    </form>
+                    <br/>
+                    Radius of the circle:<br/>
+                    <input type="number" name="radius" id="radius" value="" min="0" required>
+                    <br/>
+                    <button type="button" id="submitTask3" onclick=geometrizer();>Calculate</button>
+                    <script type="text/javascript" src="geometrizer.js"></script>
+                    <p id="geometrizerReturn"></p>
+                </div>
+            </div>
+            <!--Task 4 Window-->
+            <div id="task4" class="window">
+                <p id="task4Title" class="taskTitles">
+                    Task 4: The Temperature Converter
+                </p>
+                <div id="temperatureConvTask3" class="functionWindow">
+                    <p class="taskInfo">
+                        This task helps you convert between temperatures.
+                    </p>
+                    <form action="">
+                        <input type="radio" id="fToC" name="circleFunction" checked>°F to °C
+                        <input type="radio" id="cToF" name="circleFunction">°C to °F
+                        <br/>
+                        <br/>
+                        Temperature:<br/>
+                        <input type="number" name="degrees" id="degrees" value="" min="0" required>
+                        <br/>
+                    </form>
+                    <button type="button" id="submitTask4" onclick=temperatureConverter();>Calculate</button>
+                    <script type="text/javascript" src="temperatureConverter.js"></script>
+                    <p id="temperatureConvReturn"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
